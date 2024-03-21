@@ -16,8 +16,11 @@ import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/Shared/Themes/Mode";
 import { navItems } from "@/components/Shared/Navbar/NavItems";
 import DropdownNav from "@/components/Shared/Navbar/DropdownNav";
+import { usePathname } from "next/navigation";
 
 export function Navbar() {
+  const pathname = usePathname();
+
   return (
     <nav className="container pt-5 flex items-center justify-between">
       {/* Website name */}
@@ -29,10 +32,14 @@ export function Navbar() {
             <NavigationMenuItem
               key={item.title}
               className="ml-auto lg:block hidden">
-              <Link href={item?.href} legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  {item.title}
-                </NavigationMenuLink>
+              <Link
+                href={item?.href}
+                legacyBehavior
+                passHref>
+               <NavigationMenuLink className={`link ${navigationMenuTriggerStyle()} ${pathname === item.href ? "text-prime" : ""}`}>
+          {item.title}
+        </NavigationMenuLink>
+
               </Link>
             </NavigationMenuItem>
           ))}

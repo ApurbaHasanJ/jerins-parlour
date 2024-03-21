@@ -23,7 +23,7 @@ const Services = () => {
         {/* card 1 */}
         <Card>
           <CardHeader>
-            <div className="bg-[#F63E7B]/20 w-fit mx-auto text-center rounded-full">
+            <div className="bg-[#F63E7B]/20 mb-2 w-fit mx-auto text-center rounded-full">
               <Image
                 width={42}
                 height={42}
@@ -45,7 +45,7 @@ const Services = () => {
         {/* card 2 */}
         <Card>
           <CardHeader>
-            <div className="bg-[#F63E7B]/20 w-fit mx-auto text-center rounded-full">
+            <div className="bg-[#F63E7B]/20 mb-2 w-fit mx-auto text-center rounded-full">
               <Image
                 width={42}
                 height={42}
@@ -67,7 +67,7 @@ const Services = () => {
         {/* card 3 */}
         <Card>
           <CardHeader>
-            <div className="bg-[#F63E7B]/20 w-fit mx-auto text-center rounded-full">
+            <div className="bg-[#F63E7B]/20 mb-2 w-fit mx-auto text-center rounded-full">
               <Image
                 width={42}
                 height={42}
