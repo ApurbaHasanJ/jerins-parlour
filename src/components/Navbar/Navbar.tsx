@@ -14,25 +14,8 @@ import {
 import LogoAndName from "@/components/LogoAndName/LogoAndName";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/Themes/Mode";
-
-const components: { title: string; href: string }[] = [
-  {
-    title: "Home",
-    href: "/",
-  },
-  {
-    title: "Our Portfolio",
-    href: "/our-portfolio",
-  },
-  {
-    title: "Our Team",
-    href: "/our-team",
-  },
-  {
-    title: "Contact Us",
-    href: "/contact-us",
-  },
-];
+import { navItems } from "@/components/Navbar/NavItems";
+import DropdownNav from "@/components/Navbar/DropdownNav";
 
 export function NavigationMenuDemo() {
   return (
@@ -40,21 +23,26 @@ export function NavigationMenuDemo() {
       {/* Website name */}
       <LogoAndName />
       <NavigationMenu>
-        <NavigationMenuList>
+        <NavigationMenuList className="">
           {/* nav items */}
-          {components.map((component) => (
-            <NavigationMenuItem key={component.title} className="ml-auto">
-              <Link href={component?.href} legacyBehavior passHref>
+          {navItems.map((item) => (
+            <NavigationMenuItem
+              key={item.title}
+              className="ml-auto lg:block hidden">
+              <Link href={item?.href} legacyBehavior passHref>
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  {component.title}
+                  {item.title}
                 </NavigationMenuLink>
               </Link>
             </NavigationMenuItem>
           ))}
           <NavigationMenuItem>
-            <Button>Login</Button>
+            <Button >Login</Button>
           </NavigationMenuItem>
-          <NavigationMenuItem className="pl-3">
+          <NavigationMenuItem className="md:px-3 px-1 lg:hidden">
+            <DropdownNav />
+          </NavigationMenuItem>
+          <NavigationMenuItem className="lg:pl-3">
             <ModeToggle />
           </NavigationMenuItem>
         </NavigationMenuList>
