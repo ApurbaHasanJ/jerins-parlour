@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.text-prime{
+    @apply text-[#F63E7B]
+}
+.bg-prime{
+    @apply bg-[#F63E7B]
+}

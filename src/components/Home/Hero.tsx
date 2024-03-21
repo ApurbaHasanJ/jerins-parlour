@@ -5,7 +5,7 @@ import hero from "/src/assets/hero.png";
 import Image from "next/image";
 const Hero = () => {
   return (
-    <header className="bg-orange-50/60 dark:bg-slate-900 shadow-sm">
+    <header className="bg-orange-50/60 dark:bg-slate-950 shadow-sm">
       <Navbar />
       <div className="container py-7 flex lg:flex-row flex-col gap-10 items-center justify-between">
         <div>
