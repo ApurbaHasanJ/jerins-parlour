@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { FaBars } from "react-icons/fa6";
-import { navItems } from "@/components/Navbar/NavItems";
+import { navItems } from "@/components/Shared/Navbar/NavItems";
 
 import React from "react";
 import Link from "next/link";

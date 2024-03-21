@@ -11,15 +11,15 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import LogoAndName from "@/components/LogoAndName/LogoAndName";
+import LogoAndName from "@/components/Shared/LogoAndName/LogoAndName";
 import { Button } from "@/components/ui/button";
-import { ModeToggle } from "@/components/Themes/Mode";
-import { navItems } from "@/components/Navbar/NavItems";
-import DropdownNav from "@/components/Navbar/DropdownNav";
+import { ModeToggle } from "@/components/Shared/Themes/Mode";
+import { navItems } from "@/components/Shared/Navbar/NavItems";
+import DropdownNav from "@/components/Shared/Navbar/DropdownNav";
 
-export function NavigationMenuDemo() {
+export function Navbar() {
   return (
-    <nav className="container mt-5 flex items-center justify-between">
+    <nav className="container pt-5 flex items-center justify-between">
       {/* Website name */}
       <LogoAndName />
       <NavigationMenu>
@@ -37,7 +37,7 @@ export function NavigationMenuDemo() {
             </NavigationMenuItem>
           ))}
           <NavigationMenuItem>
-            <Button >Login</Button>
+            <Button size="sm">Login</Button>
           </NavigationMenuItem>
           <NavigationMenuItem className="md:px-3 px-1 lg:hidden">
             <DropdownNav />
