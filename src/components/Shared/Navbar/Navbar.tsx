@@ -44,7 +44,7 @@ export function Navbar() {
             </NavigationMenuItem>
           ))}
           <NavigationMenuItem>
-            <Button size="sm">Login</Button>
+            <Button size="sm" >Login</Button>
           </NavigationMenuItem>
           <NavigationMenuItem className="md:px-3 px-1 lg:hidden">
             <DropdownNav />

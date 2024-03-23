@@ -8,3 +8,11 @@
 .bg-prime{
     @apply bg-[#F63E7B]
 }
+
+.sec-title{
+    @apply text-4xl font-bold
+}
+
+.sec-desc{
+    @apply text-sm text-[#666666] dark:text-gray-400 
+}

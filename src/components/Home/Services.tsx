@@ -15,8 +15,9 @@ import facialTreatment from "/src/assets/facial-treatment.png";
 
 const Services = () => {
   return (
-    <section className="lg:pt-20 pt-16 text-center container">
-      <h2 className="text-4xl font-bold">
+    <section className="lg:pt-20 pt-16 text-center dark:bg-slate-950/70">
+      <div className="container ">
+      <h2 className="sec-title">
         Our Awesome <span className="text-prime">Services</span>
       </h2>
       <div className="mt-12 grid lg:grid-cols-3 grid-cols-1 items-center justify-between lg:gap-20 gap-6">
@@ -88,6 +89,7 @@ const Services = () => {
         </Card>
       </div>
       <Button className="mt-12">Explore more</Button>
+      </div>
     </section>
   );
 };
