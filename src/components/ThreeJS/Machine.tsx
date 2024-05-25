@@ -7,6 +7,7 @@ interface MachineProps {
   
 export const Machine: React.FC<MachineProps> =(props) =>{
   const { nodes, materials } = useGLTF('/media.glb')
+  
   return (
     <group {...props} dispose={null}>
       <mesh
